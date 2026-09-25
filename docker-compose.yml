@@ -1,21 +1,23 @@
 services:
   wcp-ai-audit:
-    image: mirabba/wcp-ai-audit:latest
-    container_name: wcp-ai-audit
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wcp-ai-audit-ubuntu
     restart: unless-stopped
     ports:
+      # Nginx listens on port 80 and reverse proxies to internal Next.js
       - "80:80"
+      - "3000:80"
     environment:
       - NODE_ENV=production
       - SCAN_RETENTION_DAYS=365
+      # Optional: set subpath if behind a secondary reverse proxy (e.g. /ai-audit), or leave empty for root
+      - NEXT_PUBLIC_BASE_PATH=
       # Optional: Google PageSpeed API Key
       - PAGESPEED_API_KEY=
-      # Optional: Discord Webhook URL for scan notifications
-      - DISCORD_WEBHOOK_URL=
     volumes:
-      - ai_audit_data:/app/data
-      - ai_audit_pdfs:/app/public/assets/scan
-
-volumes:
-  ai_audit_data:
-  ai_audit_pdfs:
+      # Persistent local database & scans
+      - ./data:/app/data
+      # Persistent generated PDF storage
+      - ./public/assets/scan:/app/public/assets/scan
