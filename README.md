@@ -1,4 +1,7 @@
 <div align="center">
+<a href="https://hub.docker.com/r/miralamin/wcp-ai-audit">
+  <img src="public/og/social-preview-1280x640.png" alt="WebCare Pro AI & GEO Readiness Audit Tool - Docker Container" width="100%" />
+</a>
 
 # 🚀 WebCare Pro • AI & GEO Readiness Audit Tool
 ### Enterprise Diagnostic Engine for Technical SEO, Core Web Vitals, AI Crawlers & Model Context Protocol (MCP)
