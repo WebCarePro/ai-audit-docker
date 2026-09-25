@@ -1,6 +1,6 @@
 services:
   wcp-ai-audit:
-    image: webcarepro/wcp-ai-audit:latest
+    image: mirabba/wcp-ai-audit:latest
     container_name: wcp-ai-audit
     restart: unless-stopped
     ports:
