@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <title>WebCare Pro - BIMI Verified Brand Logo</title>
+  <defs>
+    <!-- Background Dark Canvas Gradient -->
+    <linearGradient id="bimiCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Primary Brand Glow Gradient -->
+    <linearGradient id="wcpGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Inner Shield Background -->
+    <linearGradient id="shieldFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Solid Square Background Container (BIMI Compliant 1:1) -->
+  <rect width="512" height="512" fill="url(#bimiCanvas)" rx="96" />
+
+  <!-- Outer Brand Accent Circle Frame -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="url(#wcpGradient)" stroke-width="6" opacity="0.4" />
+
+  <!-- CENTERED LOGO MARK (Shield + Server Blade Stack + W Monogram) -->
+  <g transform="translate(106, 86) scale(3)">
+    <!-- Outer Protective Shield -->
+    <path d="M 50 4 L 88 18 C 88 56 70 82 50 96 C 30 82 12 56 12 18 Z" 
+          fill="url(#shieldFill)" 
+          stroke="url(#wcpGradient)" 
+          stroke-width="3.5" 
+          stroke-linejoin="round" />
+
+    <!-- Inner Cyber Grid Accent -->
+    <path d="M 50 12 L 80 23 C 80 52 65 74 50 86 C 35 74 20 52 20 23 Z" 
+          fill="none" 
+          stroke="#334155" 
+          stroke-width="1.5" 
+          stroke-dasharray="3 3" />
+
+    <!-- Server Blade 1 (Top) -->
+    <rect x="28" y="28" width="44" height="10" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="34" cy="33" r="1.5" fill="#10b981" />
+    <circle cx="40" cy="33" r="1.5" fill="#38bdf8" />
+    <line x1="48" y1="33" x2="64" y2="33" stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Server Blade 2 (Middle) -->
+    <rect x="28" y="44" width="44" height="10" rx="2" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5" />
+    <circle cx="34" cy="49" r="1.5" fill="#10b981" />
+    <circle cx="40" cy="49" r="1.5" fill="#10b981" />
+    <line x1="48" y1="49" x2="64" y2="49" stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Server Blade 3 (Bottom) -->
+    <rect x="28" y="60" width="44" height="10" rx="2" fill="#0f172a" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="34" cy="65" r="1.5" fill="#10b981" />
+    <circle cx="40" cy="65" r="1.5" fill="#f59e0b" />
+    <line x1="48" y1="65" x2="64" y2="65" stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Stylized Speed Lightning 'W' Overlay -->
+    <path d="M 26 40 L 36 78 L 50 50 L 64 78 L 74 40" 
+          fill="none" 
+          stroke="url(#wcpGradient)" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+  </g>
+
+  <!-- AI Audit Badge Tag at bottom -->
+  <g transform="translate(166, 420)">
+    <rect x="0" y="0" width="180" height="52" rx="26" fill="#0f172a" stroke="url(#wcpGradient)" stroke-width="3" />
+    <text x="90" y="34" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-weight="900" 
+          font-size="22" 
+          letter-spacing="2" 
+          fill="#38bdf8" 
+          text-anchor="middle">
+      AI AUDIT
+    </text>
+  </g>
+</svg>

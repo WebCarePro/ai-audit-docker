@@ -1,0 +1,90 @@
+# Robots.txt for WebCare Pro AI-Ready & GEO Audit Tool
+# Public Canonical Endpoint: https://webcarespro.com/ai-audit/
+
+User-agent: *
+# Allow indexing of main tool landing page
+Allow: /ai-audit/$
+Allow: /ai-audit$
+# Disallow all scan results, domain reports, and subpages
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+# AI Crawlers & LLM Agents
+User-agent: GPTBot
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+User-agent: ChatGPT-User
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+User-agent: Claude-Web
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+User-agent: anthropic-ai
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+User-agent: Google-Extended
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+User-agent: PerplexityBot
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+User-agent: Applebot-Extended
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+User-agent: Cohere-ai
+Allow: /ai-audit/$
+Allow: /ai-audit$
+Disallow: /ai-audit/
+Disallow: /ai-ready-test/
+Disallow: /geo-audit/
+Disallow: /geo-test/
+Disallow: /ai-readiness/
+
+# Machine-Readable AI Context
+LLM-Full-Context: https://webcarespro.com/ai-audit/llms.txt
+Sitemap: https://webcarespro.com/sitemap.xml

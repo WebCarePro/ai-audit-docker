@@ -1,0 +1,20 @@
+# WebCare Pro - AI Readiness & GEO Optimization Auditor
+> Enterprise Automated Engine for Generative Engine Optimization (GEO), AI Search Crawlers, and Agentic Interoperability.
+
+## Overview
+WebCare Pro AI Readiness & Technical Audit Tool (https://webcarespro.com/ai-audit) evaluates websites against 44 automated technical checks across:
+1. **AI Search & LLM Discovery**: Crawl policies for GPTBot, ClaudeBot, Google-Extended, PerplexityBot, llms.txt discovery, robots.txt directives.
+2. **Generative Engine Optimization (GEO)**: JSON-LD Graph integrity, Entity disambiguation, Wikidata citations, Article/Author schemas, FAQ/HowTo structured data.
+3. **Agentic Web Standards & Tool Calling**: Model Context Protocol (MCP) server endpoints, OpenAPI / swagger specs, WebMCP micro-actions, agent rate-limiting headers.
+4. **Content Extraction & LLM Parsing**: Markdown alternate links, HTML semantic density, article text-to-code ratios, clean main-content layout without DOM trapping.
+5. **Technical Speed & Server Hygiene**: Core Web Vitals (LCP, INP, CLS), TTFB, HTTPS/TLS v1.3 configuration, SSRF-safe bot processing.
+
+## Documentation & Fix Guides
+Full remediation guides with code snippets and Schema templates are available at:
+https://webcarespro.com/blog/docs
+
+## Key URLs
+- **Tool**: https://webcarespro.com/ai-audit
+- **Main Platform**: https://webcarespro.com
+- **Guides**: https://webcarespro.com/blog/docs
+- **Author / Lead Architect**: Mir Alamin (https://webcarespro.com/about)
