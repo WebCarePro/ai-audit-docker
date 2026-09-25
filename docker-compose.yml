@@ -1,0 +1,21 @@
+services:
+  wcp-ai-audit:
+    image: webcarepro/wcp-ai-audit:latest
+    container_name: wcp-ai-audit
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+      - SCAN_RETENTION_DAYS=365
+      # Optional: Google PageSpeed API Key
+      - PAGESPEED_API_KEY=
+      # Optional: Discord Webhook URL for scan notifications
+      - DISCORD_WEBHOOK_URL=
+    volumes:
+      - ai_audit_data:/app/data
+      - ai_audit_pdfs:/app/public/assets/scan
+
+volumes:
+  ai_audit_data:
+  ai_audit_pdfs:
