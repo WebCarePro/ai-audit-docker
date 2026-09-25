@@ -8,7 +8,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-26-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16.3.3_Standalone-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React 19](https://img.shields.io/badge/React-19.2.8-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/mirabba/wcp-ai-audit?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/mirabba/wcp-ai-audit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/miralamin/wcp-ai-audit?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/miralamin/wcp-ai-audit)
 
 <p align="center">
   <strong>Self-Hosted · 42+ Technical Checkpoints · Embedded Nginx Reverse Proxy · Local JSON Database · Zero Vendor Lock-In</strong>
@@ -60,7 +60,7 @@ docker run -d \
   -p 80:80 \
   -v ai_audit_data:/app/data \
   --restart unless-stopped \
-  mirabba/wcp-ai-audit:latest
+  miralamin/wcp-ai-audit:latest
 ```
 
 Open your browser at:
@@ -75,7 +75,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   ai-audit:
-    image: mirabba/wcp-ai-audit:latest
+    image: miralamin/wcp-ai-audit:latest
     container_name: wcp-ai-audit
     restart: unless-stopped
     ports:
