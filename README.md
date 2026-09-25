@@ -3,7 +3,7 @@
 # 🐳 WebCarePro • AI & GEO Audit Docker Tool
 ### Free Self-Hosted Diagnostic Engine for Technical SEO, Core Web Vitals, AI Crawlers & Model Context Protocol (MCP)
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/webcarepro/wcp-ai-audit?style=for-the-badge&logo=docker)](https://hub.docker.com/r/webcarepro/wcp-ai-audit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/mirabba/wcp-ai-audit?style=for-the-badge&logo=docker)](https://hub.docker.com/r/mirabba/wcp-ai-audit)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04_LTS_(Noble)-E95420?style=for-the-badge&logo=ubuntu)](https://ubuntu.com/)
 [![Nginx](https://img.shields.io/badge/Nginx-Reverse_Proxy-009639?style=for-the-badge&logo=nginx)](https://nginx.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-22_LTS-339933?style=for-the-badge&logo=nodedotjs)](https://nodejs.org/)
@@ -42,7 +42,7 @@ docker run -d \
   --name wcp-ai-audit \
   -p 80:80 \
   -v wcp_ai_audit_data:/app/data \
-  webcarepro/wcp-ai-audit:latest
+  mirabba/wcp-ai-audit:latest
 ```
 
 After launching, open your browser and navigate to:
@@ -59,7 +59,7 @@ version: '3.8'
 
 services:
   wcp-ai-audit:
-    image: webcarepro/wcp-ai-audit:latest
+    image: mirabba/wcp-ai-audit:latest
     container_name: wcp-ai-audit
     restart: unless-stopped
     ports:
@@ -113,5 +113,5 @@ docker compose down
 
 - **Maintained by**: [WebCarePro](https://webcarespro.com)
 - **Live Demo / Web Tool**: [https://webcarespro.com/ai-audit](https://webcarespro.com/ai-audit)
-- **Docker Hub**: [https://hub.docker.com/r/webcarepro/wcp-ai-audit](https://hub.docker.com/r/webcarepro/wcp-ai-audit)
+- **Docker Hub**: [https://hub.docker.com/r/mirabba/wcp-ai-audit](https://hub.docker.com/r/mirabba/wcp-ai-audit)
 - **License**: MIT License - Free for personal & enterprise use.
