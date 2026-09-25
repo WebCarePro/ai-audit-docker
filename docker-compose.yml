@@ -1,5 +1,6 @@
 services:
   wcp-ai-audit:
+    image: miralamin/wcp-ai-audit:latest
     build:
       context: .
       dockerfile: Dockerfile
